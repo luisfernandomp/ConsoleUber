@@ -18,6 +18,21 @@ namespace uberProjeto
             this.bandeira = Console.ReadLine();
             Console.Write("\nCVV: ");
             this.cvv = Console.ReadLine();
+            if(this.numero == "" || this.numero == null){
+                return "Cadastro realizado com falhas!";    
+            }else{
+               if(this.titular == "" || this.titular == null){
+                   return "Cadastro realizado com falhas!";
+               }else{
+                   if(this.bandeira == "" || this.bandeira == null){
+                        return "Cadastro realizado com falhas!";
+                   }else{
+                       if(this.cvv == "" || this.cvv == null){
+                           return "Cadastro realizado com falhas!";
+                       }
+                   }
+               }
+            }
             return "Cadastro realizado com sucesso!";
         }
         public void Excluir(){

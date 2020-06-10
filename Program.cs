@@ -64,6 +64,8 @@ namespace uberProjeto
                             string retorno = mt.aceitarPassageiro(Paulo.Nome);
                             if(retorno == "Passageiro aceito"){
                                 mt.receberPagamento();
+                                string conta = ct.cadastrar("12345","12345");
+                                Console.WriteLine(conta);
                                 pay.status = "Finalizada";
                                 pay.data = DateTime.Today;
                                 Console.WriteLine("Deseja confirmar a corrida? (responda com s - sim ou n - não)");
@@ -88,7 +90,6 @@ namespace uberProjeto
                                     corrida.passageiro = Paulo.Nome;
                                         if(retorno == "Passageiro aceito"){
                                             corrida.statusCorrida = "Confirmada";
-                                            ct.cadastrar();
                                             Console.Clear();
                                             Console.WriteLine("__________DADOS_DA_CORRIDA_____________");
                                             Console.WriteLine($"| Início: {corrida.localInicio}       ");
@@ -144,11 +145,13 @@ namespace uberProjeto
                                 Console.WriteLine(solicitacao);
                                 Thread.Sleep(1800);
                                 retorno = mt.aceitarPassageiro(Paulo.Nome);
-                                if(retorno == "Passageiro aceito"){
+                                if(retorno == "Passageiro aceito" && cadastrarCartao == "Cadastro realizado com sucesso!"){
                                     mt.receberPagamento();
+                                    string conta = ct.cadastrar("12345","12345");
+                                    Console.WriteLine(conta);
                                     Console.WriteLine("Deseja confirmar a corrida? (responda com s - sim ou n - não)");
                                     string confirmarCorrida = Console.ReadLine();
-                                    if(confirmarCorrida == "s"){
+                                    if(confirmarCorrida == "s" ){
                                         corrida.statusCorrida = "Cancelada";
                                         pay.status = "Finalizada";
                                         pay.data = DateTime.Today;
@@ -168,7 +171,6 @@ namespace uberProjeto
                                         corrida.passageiro = Paulo.Nome;
                                         if(retorno == "Passageiro aceito"){
                                             corrida.statusCorrida = "Confirmada";
-                                            ct.cadastrar();
                                             Console.Clear();
                                             Console.WriteLine("__________DADOS_DA_CORRIDA_____________");
                                             Console.WriteLine($"| Início: {corrida.localInicio}       ");
@@ -221,10 +223,11 @@ namespace uberProjeto
                     }
                 }
             Console.Clear();
-            Console.WriteLine("Deseja apagar os dados do cartão? Responda com sim ou não");
+            Console.WriteLine("Deseja apagar os dados do cartão e os dados da conta do motorista? Responda com sim ou não");
             string apagarDados = Console.ReadLine();
             if(apagarDados == "sim"){
                 card.Excluir();
+                ct.excluir();
                 Thread.Sleep(2000);
                 System.Environment.Exit(0);
             }else{

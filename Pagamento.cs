@@ -14,7 +14,9 @@ namespace uberProjeto
                 if(value == "1"){
                     pagamento = "Dinheiro";
                 }else{
-                    pagamento = "Cartão";
+                    if(value == "2"){
+                        pagamento = "Cartão";
+                    }
                 }
              }
         }

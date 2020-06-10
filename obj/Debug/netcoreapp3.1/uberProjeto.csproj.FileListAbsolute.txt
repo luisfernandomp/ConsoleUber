@@ -1,0 +1,13 @@
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.exe
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.deps.json
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.runtimeconfig.json
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.runtimeconfig.dev.json
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.dll
+C:\Users\HOME\Documents\uberProjeto\bin\Debug\netcoreapp3.1\uberProjeto.pdb
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.csprojAssemblyReference.cache
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.AssemblyInfoInputs.cache
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.AssemblyInfo.cs
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.csproj.CoreCompileInputs.cache
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.dll
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.pdb
+C:\Users\HOME\Documents\uberProjeto\obj\Debug\netcoreapp3.1\uberProjeto.genruntimeconfig.cache

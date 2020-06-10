@@ -4,7 +4,10 @@ namespace uberProjeto
 {
     public class Pagamento
     {
-        private DateTime data;
-        private string status;
+        public DateTime data { get; set; }
+        public string status { get; set; }
+        public string FormaPagamento { get; set; }
+
+
     }
 }

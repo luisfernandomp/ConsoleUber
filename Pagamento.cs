@@ -6,7 +6,19 @@ namespace uberProjeto
     {
         public DateTime data { get; set; }
         public string status { get; set; }
-        public string FormaPagamento { get; set; }
+        private string pagamento;
+        public string FormaPagamento
+        {
+            get { return pagamento; }
+            set {
+                if(value == "1"){
+                    pagamento = "Dinheiro";
+                }else{
+                    pagamento = "Cartão";
+                }
+             }
+        }
+        
 
 
     }

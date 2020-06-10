@@ -53,7 +53,7 @@ namespace uberProjeto
                     pay.FormaPagamento = fPagamento;
                     switch (pay.FormaPagamento)
                     {
-                        case "1": 
+                        case "Dinheiro": 
                             Console.Clear();
                             Console.Write("Pagamento em dinheiro!");
                             Thread.Sleep(2000);
@@ -133,7 +133,7 @@ namespace uberProjeto
                                 Console.WriteLine("Passageiro Recusado!");
                             }
                                 ;break;
-                            case "2": 
+                            case "Cartão": 
                                 Console.Clear();
                                 Console.Write("Pagamento no cartão!");
                                 Thread.Sleep(2000);
